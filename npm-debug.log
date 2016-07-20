@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.2.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test2' ]
+2 info using npm@3.10.2
+3 info using node@v6.2.1
+4 verbose run-script [ 'pretest2', 'test2', 'posttest2' ]
+5 info lifecycle cms-project@1.0.0~pretest2: cms-project@1.0.0
+6 silly lifecycle cms-project@1.0.0~pretest2: no script for pretest2, continuing
+7 info lifecycle cms-project@1.0.0~test2: cms-project@1.0.0
+8 verbose lifecycle cms-project@1.0.0~test2: unsafe-perm in lifecycle true
+9 verbose lifecycle cms-project@1.0.0~test2: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/nogaenbar/Desktop/FAC/FACweek7/cms-project/node_modules/.bin:/usr/local/Cellar/node/6.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+10 verbose lifecycle cms-project@1.0.0~test2: CWD: /Users/nogaenbar/Desktop/FAC/FACweek7/cms-project
+11 silly lifecycle cms-project@1.0.0~test2: Args: [ '-c', 'node test/backend/spec.js' ]
+12 silly lifecycle cms-project@1.0.0~test2: Returned: code: 1  signal: null
+13 info lifecycle cms-project@1.0.0~test2: Failed to exec test2 script
+14 verbose stack Error: cms-project@1.0.0 test2: `node test/backend/spec.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:852:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+15 verbose pkgid cms-project@1.0.0
+16 verbose cwd /Users/nogaenbar/Desktop/FAC/FACweek7/cms-project
+17 error Darwin 13.4.0
+18 error argv "/usr/local/Cellar/node/6.2.1/bin/node" "/usr/local/bin/npm" "run" "test2"
+19 error node v6.2.1
+20 error npm  v3.10.2
+21 error code ELIFECYCLE
+22 error cms-project@1.0.0 test2: `node test/backend/spec.js`
+22 error Exit status 1
+23 error Failed at the cms-project@1.0.0 test2 script 'node test/backend/spec.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the cms-project package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node test/backend/spec.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs cms-project
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls cms-project
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
