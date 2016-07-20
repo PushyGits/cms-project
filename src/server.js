@@ -1,11 +1,18 @@
 'use strict';
-const staticfile = require('./route/staticfile.js');
-const userroute = require('./route/user.js');
-const useradmin = require('./route/useradmin.js');
+// const homepage = require('./route/homepage.js');
+// const staticfile = require('./route/staticfile.js');
+// const userroute = require('./route/user.js');
+// const useradmin = require('./route/useradmin.js');
+//
+// const Hapi = require('hapi');
+// const Handlebars = require('handlebars');
 
-const Hapi = require('hapi');
+// const plugins = [require('inert'), require('vision')];
+// const serverroutes = [homepage, staticfile, userroute, useradmin];
 
-const server = new Hapi.Server();
+const req = require('./require.js');
+
+const server = new req.Hapi.Server();
 server.connection({ port: process.env.PORT || 3000 });
 
 server.start((err) => {
@@ -16,16 +23,26 @@ server.start((err) => {
     console.log('Server running at:', server.info.uri);
 });
 
-server.register(require('inert'), (err) => {
+server.register(req.plugins, (err) => {
 
     if (err) {
         throw err;
     }
 
-    server.route(staticfile);
-    server.route(userroute);
-    server.route(useradmin);
+    server.route(req.serverroutes);
+
+    server.views({
+      engines: {html: req.Handlebars},
+      relativeTo: __dirname,
+      path: '../views',
+      layoutPath: '../views/layout',
+      partialsPath: '../views/partials',
+      helpersPath: '../views/helpers'
+    });
 
 });
+
+
+
 
 module.exports = server;
