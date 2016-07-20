@@ -25,6 +25,7 @@ server.register(req.plugins, (err) => {
     engines: {html: req.Handlebars},
     relativeTo: __dirname,
     path: '../views',
+    layout: 'default',
     layoutPath: '../views/layout',
     partialsPath: '../views/partials',
     helpersPath: '../views/helpers'
