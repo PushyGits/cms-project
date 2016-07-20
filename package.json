@@ -7,14 +7,18 @@
     "hapi": "^13.5.0",
     "inert": "^4.0.1",
     "joi": "^9.0.1",
+    "pg": "^6.0.3",
     "shot": "^3.1.0",
     "tape": "^4.6.0",
     "vision": "^4.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "env2": "^2.1.0"
+  },
   "scripts": {
     "start": "nodemon src/server.js",
-    "test": "node test/serverTests.js"
+    "test": "node test/serverTests.js",
+    "test2": "node test/backend/spec.js"
   },
   "repository": {
     "type": "git",

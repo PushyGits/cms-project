@@ -31,3 +31,13 @@ CREATE TABLE blogposts (
   created timestamp not null,
   last_edited timestamp not null
 );
+
+## set up environment variables
+create a .env file at the root of the project and add the following env variables. (you will need the correct urls).
+
+```
+export POSTGRES_TEST=test_db_url
+export POSTGRES_DEV=dev_db_url
+export POSTGRES_PRODUCTION=production_db_url
+
+```
