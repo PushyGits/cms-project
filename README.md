@@ -30,6 +30,8 @@ CREATE TABLE blogposts (
   id serial primary key not null,
   user_id int not null REFERENCES users(id),
   post text not null,
+  title varchar(255) not null,
+  standfirst text not null,
   created timestamp not null,
   last_edited timestamp not null
 );
