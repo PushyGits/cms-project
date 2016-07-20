@@ -1,4 +1,4 @@
-const staticfile = {
+module.exports = {
     method: 'GET',
     path: '/{param*}',
     handler: {
@@ -8,5 +8,3 @@ const staticfile = {
         }
     }
 }
-
-module.exports = staticfile;
