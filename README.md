@@ -1,4 +1,6 @@
 # cms-project
+
+[![Join the chat at https://gitter.im/PushyGits/cms-project](https://badges.gitter.im/PushyGits/cms-project.svg)](https://gitter.im/PushyGits/cms-project?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Recreating Wordpress
 
 ## features
