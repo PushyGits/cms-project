@@ -22,3 +22,5 @@ server.register(require('inert'), (err) => {
     server.route(staticfile);
 
 });
+
+module.exports = server;
