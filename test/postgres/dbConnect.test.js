@@ -12,6 +12,7 @@ tape('connect to test postgres DB', t => {
   const client = new pg.Client(process.env.POSTGRES_TEST);
   client.connect(err => {
     t.error(err);
+    client.end();
     t.end();
   });
 });
@@ -20,6 +21,7 @@ tape('connect to development postgres DB', t => {
   const client = new pg.Client(process.env.POSTGRES_DEV);
   client.connect(err => {
     t.error(err);
+    client.end();
     t.end();
   });
 });
@@ -28,6 +30,7 @@ tape('connect to production postgres DB', t => {
   const client = new pg.Client(process.env.POSTGRES_PRODUCTION);
   client.connect(err => {
     t.error(err);
+    client.end();
     t.end();
   });
 });

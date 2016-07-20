@@ -1,5 +1,5 @@
 var tape = require('tape');
-var server = require('../src/server.js'); // our index.js from above
+var server = require('../../src/server.js'); // our index.js from above
 
 tape('Basic HTTP Tests - GET /index.html', function(t) { // t
   var options = {
