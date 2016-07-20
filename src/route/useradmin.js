@@ -1,9 +1,7 @@
-const useradmin = {
+module.exports = {
   method: 'GET',
   path: '/{user}/admin',
   handler: function (request, reply) {
-      reply.file('./public/useradmin.html');
+      reply.view('useradmin');
   }
 }
-
-module.exports = useradmin;

@@ -3,3 +3,5 @@ public/css/.sass-cache
 node_modules
 
 .env
+
+npm-debug.log
