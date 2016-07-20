@@ -1,5 +1,8 @@
 'use strict';
 const staticfile = require('./route/staticfile.js');
+const userroute = require('./route/user.js');
+const useradmin = require('./route/useradmin.js');
+
 const Hapi = require('hapi');
 
 const server = new Hapi.Server();
@@ -20,6 +23,8 @@ server.register(require('inert'), (err) => {
     }
 
     server.route(staticfile);
+    server.route(userroute);
+    server.route(useradmin);
 
 });
 
