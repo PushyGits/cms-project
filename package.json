@@ -19,7 +19,7 @@
   "scripts": {
     "start": "nodemon src/server.js",
     "test": "node test/serverTests.js",
-    "test2": "node test/backend/spec.js"
+    "test2": "node test/postgres/dbConnect.js"
   },
   "repository": {
     "type": "git",
