@@ -1,22 +1,22 @@
 
 const dropTables = (client) => {
-  //DROP TABLE
+  // DROP TABLE
   client.query(`DROP TABLE IF EXISTS users, blogposts;`, err => {
-    if (err) throw err;
-  });
-};
+    if (err) throw err
+  })
+}
 
 
 const createUserTable = (client) => {
-  //CREATE TABLE
+  // CREATE TABLE
   client.query(`CREATE TABLE users (
                 id serial primary key not null,
                 name varchar(255) not null,
                 password varchar(255) not null
                 );`, err => {
-    if (err) throw err;
-  });
-};
+    if (err) throw err
+  })
+}
 
 const createBlogPostsTable = (client) => {
   client.query(`CREATE TABLE blogposts (
@@ -28,12 +28,12 @@ const createBlogPostsTable = (client) => {
                 created timestamp not null,
                 last_edited timestamp not null
                 );`, err => {
-    if (err) throw err;
-  });
-};
+    if (err) throw err
+  })
+}
 
 module.exports = {
   dropTables,
   createUserTable,
   createBlogPostsTable
-};
+}
