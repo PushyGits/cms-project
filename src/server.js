@@ -1,25 +1,21 @@
-'use strict';
+const req = require('./require.js')
 
-const req = require('./require.js');
-
-const server = new req.Hapi.Server();
-server.connection({ port: process.env.PORT || 3000 });
+const server = new req.Hapi.Server()
+server.connection({ port: process.env.PORT || 3000 })
 
 server.start((err) => {
-
   if (err) {
-    throw err;
+    throw err
   }
-  console.log('Server running at:', server.info.uri);
-});
+  console.log('Server running at:', server.info.uri)
+})
 
 server.register(req.plugins, (err) => {
-
   if (err) {
-    throw err;
+    throw err
   }
 
-  server.route(req.serverroutes);
+  server.route(req.serverroutes)
 
   server.views({
     engines: {html: req.Handlebars},
@@ -29,7 +25,7 @@ server.register(req.plugins, (err) => {
     layoutPath: '../views/layout',
     partialsPath: '../views/partials',
     helpersPath: '../views/helpers'
-  });
-});
+  })
+})
 
-module.exports = server;
+module.exports = server
