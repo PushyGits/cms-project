@@ -1,13 +1,12 @@
 {{> header}}
-<h1>Homepage</h1>
-    <form class="login-form" action="" method="post">
-          <input type="text" placeholder="Username"/>
-          <input type="password" placeholder="Password"/>
+    <form class="login-form" action="/login-success" method="POST">
+          <input type="text" name="username" placeholder="Username"/>
+          <input type="password" name="password" placeholder="Password"/>
           <input type="submit" value="Log In">
     </form>
-    <form class="login-form" action= "" method="post">
-          <input type="text" placeholder="Username"/>
-          <input type="password" placeholder="Password"/>
+    <form class="login-form" action="/register-success" method="POST">
+          <input type="text" name="username" placeholder="Username"/>
+          <input type="password" name="password" placeholder="Password"/>
           <input type="submit" value="Register">
     </form>
 {{> footer}}
