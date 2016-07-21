@@ -15,6 +15,9 @@
   },
   "devDependencies": {
     "env2": "^2.1.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
     "faucet": "0.0.1"
   },
   "scripts": {
