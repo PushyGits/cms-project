@@ -46,7 +46,8 @@ table {
   border-spacing: 0; }
 
 body {
-  padding: 0.5em; }
+  padding: 0.5em;
+  font-family: sans-serif; }
 
 #header, #footer {
   text-align: center;
