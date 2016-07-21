@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "nodemon src/server.js",
-    "test:pg": "tape 'test/postgres/**/*.test.js' | faucet",
+    "test:pg": "tape 'test/postgres/**/*.test.js'",
     "test:feature": "tape 'test/feature/**/*.js' | faucet"
   },
   "repository": {
