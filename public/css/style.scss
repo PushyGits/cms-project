@@ -1,5 +1,17 @@
 @import 'partials/reset';
 
-h1 {
-  color: red;
+body {
+    padding: 0.5em;
+}
+
+// Partials
+
+#header, #footer {
+  text-align: center;
+  margin: 1em;
+}
+
+// Main Page
+.login-form {
+  padding: 0.5em;
 }

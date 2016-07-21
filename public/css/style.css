@@ -45,7 +45,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1 {
-  color: red; }
+body {
+  padding: 0.5em; }
+
+#header, #footer {
+  text-align: center;
+  margin: 1em; }
+
+.login-form {
+  padding: 0.5em; }
 
 /*# sourceMappingURL=style.css.map */
