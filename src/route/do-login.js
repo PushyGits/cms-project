@@ -11,7 +11,7 @@ module.exports = {
   path: '/do-login',
   handler: function (request, reply) {
     console.log(request.payload)
-        Joi.validate(request.payload, schema, (err, value) => {
+    Joi.validate(request.payload, schema, (err, value) => {
       if (err) reply('').redirect('/')
       else reply('').redirect('/useradmin')
     })
