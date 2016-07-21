@@ -8,7 +8,7 @@ const dropTables = (client) => {
 
 
 const createUserTable = (client) => {
-  //CREATE TABLE
+  // CREATE TABLE
   client.query(`CREATE TABLE users (
                 id serial primary key not null,
                 name varchar(255) not null,
