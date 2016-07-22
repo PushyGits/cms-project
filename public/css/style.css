@@ -146,13 +146,13 @@ body {
 
 .post-submit-form {
   text-align: center; }
-  .post-submit-form h2 {
-    margin: 0.5em; }
   .post-submit-form input {
     margin: 0.5em; }
   .post-submit-form textarea {
-    width: 60em;
-    height: 40em;
-    padding: 0.5em; }
+    width: 34em;
+    height: 24em;
+    padding: 0.5em;
+    font-size: 1.2em;
+    color: grey; }
 
 /*# sourceMappingURL=style.css.map */
