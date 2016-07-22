@@ -13,6 +13,20 @@ body {
   margin: 1em;
 }
 
+// Main Page
+.login-form {
+  padding: 0.5em;
+  line-height: 1.5em;
+}
+
+#registration-form {
+  visibility: hidden;
+}
+
+#visible {
+  visibility: visible;
+}
+
 //wrapper
 .wrapper-box {
   background-color: rgb(250,250,250);
@@ -59,6 +73,8 @@ body {
   line-height: 1.6em;
   text-align: left;
 }
+
+// User Admin Page
 
 .post-submit-form {
   text-align: center;
