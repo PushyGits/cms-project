@@ -3,6 +3,7 @@
 body {
     padding: 0.5em;
     font-family: sans-serif;
+    background-color: rgb(240,240,240);
 }
 
 // Partials
@@ -12,9 +13,46 @@ body {
   margin: 1em;
 }
 
+//wrapper
+.wrapper-box {
+  background-color: rgb(250,250,250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  text-align: center;
+  margin: 13% auto auto auto;
+  padding: 3em;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+
+  .requried-field {
+    color: red;
+  }
+
+  button {
+    width: 14em;
+  }
+  input {
+    padding: 0.5em;
+    width: 12em;
+    height: 2em;
+    font-size: 1.2em;
+    color: rgb(2,184,117);
+
+  }
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.2em;
+
+}
+
 // Main Page
 .login-form {
   padding: 0.5em;
+  line-height: 1.5em;
 }
 
 .post-submit-form {

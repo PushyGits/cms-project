@@ -1,12 +1,29 @@
 {{> header}}
+  <div class="wrapper-box">
     <form class="login-form" action="/do-login" method="POST">
+          <span>Username </span><span class="requried-field">*</span>
+          <br>
           <input type="text" name="username" placeholder="Username"/>
+          <br>
+          <span>Password </span><span class="requried-field">*</span>
+          <br>
           <input type="password" name="password" placeholder="Password"/>
+          <br>
           <input type="submit" value="Log In">
     </form>
+    <br>
+    <button class="not-registered-btn">Not already registered?</button>
+    <br>
     <form class="login-form" action="/register-success" method="POST">
+          <span>Username </span><span class="requried-field">*</span>
+          <br>
           <input type="text" name="username" placeholder="Username"/>
+          <br>
+          <span>Password </span><span class="requried-field">*</span>
+          <br>
           <input type="password" name="password" placeholder="Password"/>
+          <br>
           <input type="submit" value="Register">
     </form>
+  </div>
 {{> footer}}
