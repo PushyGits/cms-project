@@ -76,6 +76,12 @@ body {
 #not-registered-btn:hover {
   background: #e6e6e6; }
 
+#header {
+  font-weight: lighter;
+  color: #3b5998;
+  margin-top: 3em;
+  letter-spacing: 1em; }
+
 .wrapper-box {
   background-color: #fafafa;
   display: flex;
@@ -84,7 +90,7 @@ body {
   justify-content: center;
   width: 20%;
   text-align: center;
-  margin: 8% auto auto auto;
+  margin: 4% auto auto auto;
   padding: 3em;
   border-radius: 0.5em;
   font-size: 0.8em; }
