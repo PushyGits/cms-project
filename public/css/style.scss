@@ -90,6 +90,7 @@ background: rgb(230,230,230);
   padding: 3em;
   border-radius: 0.5em;
   font-size: 0.8em;
+  border: 0.5px solid rgb(210,210,210);;
 
   .requried-field {
     color: red;
@@ -153,5 +154,7 @@ background: rgb(230,230,230);
       padding: 0.5em;
       font-size: 1.2em;
       color: grey;
+      border-radius: 0.5em;
+      border: 0.5px solid rgb(210,210,210);;
     }
 }
