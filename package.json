@@ -4,6 +4,7 @@
   "description": "Recreating Wordpress",
   "main": "src/server.js",
   "dependencies": {
+    "bcrypt": "^0.8.7",
     "handlebars": "^4.0.5",
     "hapi": "^13.5.0",
     "inert": "^4.0.1",
@@ -18,11 +19,14 @@
     "eslint-config-standard": "^5.3.5",
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-standard": "^2.0.0",
-    "faucet": "0.0.1"
+    "faucet": "0.0.1",
+    "proxyquire": "^1.7.10",
+    "sinon": "^1.17.4"
   },
   "scripts": {
     "start": "nodemon src/server.js",
-    "test:pg": "tape 'test/postgres/**/*.test.js'",
+    "test:pg": "tape 'test/postgres/**/*.test.js' | faucet",
+    "test:server": "tape 'test/server/**/*.test.js'",
     "test:feature": "tape 'test/feature/**/*.js' | faucet"
   },
   "repository": {
