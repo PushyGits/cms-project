@@ -12,9 +12,9 @@
           <input type="submit" value="Log In">
     </form>
     <br>
-    <button class="not-registered-btn">Not already registered?</button>
+    <button id="not-registered-btn">Not already registered?</button>
     <br>
-    <form class="login-form" action="/register-success" method="POST">
+    <form class="login-form" id="registration-form" action="/register-success" method="POST">
           <span>Username </span><span class="requried-field">*</span>
           <br>
           <input type="text" name="username" placeholder="Username"/>
@@ -26,4 +26,6 @@
           <input type="submit" value="Register">
     </form>
   </div>
+
+  <script src="js/script.js"></script>
 {{> footer}}

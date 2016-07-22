@@ -54,6 +54,16 @@ body {
   text-align: center;
   margin: 1em; }
 
+.login-form {
+  padding: 0.5em;
+  line-height: 1.5em; }
+
+#registration-form {
+  visibility: hidden; }
+
+#visible {
+  visibility: visible; }
+
 .wrapper-box {
   background-color: #fafafa;
   display: flex;
@@ -79,10 +89,6 @@ body {
 
 ::-webkit-input-placeholder {
   font-size: 1.2em; }
-
-.login-form {
-  padding: 0.5em;
-  line-height: 1.5em; }
 
 .post-submit-form {
   text-align: center; }
