@@ -47,14 +47,42 @@ table {
 
 body {
   padding: 0.5em;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: #f0f0f0; }
 
 #header, #footer {
   text-align: center;
   margin: 1em; }
 
+.wrapper-box {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  text-align: center;
+  margin: 13% auto auto auto;
+  padding: 3em;
+  border-radius: 0.5em;
+  font-size: 0.8em; }
+  .wrapper-box .requried-field {
+    color: red; }
+  .wrapper-box button {
+    width: 14em; }
+  .wrapper-box input {
+    padding: 0.5em;
+    width: 12em;
+    height: 2em;
+    font-size: 1.2em;
+    color: #02b875; }
+
+::-webkit-input-placeholder {
+  font-size: 1.2em; }
+
 .login-form {
-  padding: 0.5em; }
+  padding: 0.5em;
+  line-height: 1.5em; }
 
 .post-submit-form {
   text-align: center; }
