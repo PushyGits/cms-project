@@ -1,6 +1,6 @@
 module.exports = {
   method: 'GET',
-  path: '/{user}/admin',
+  path: '/useradmin',
   handler: function (request, reply) {
     reply.view('useradmin')
   }

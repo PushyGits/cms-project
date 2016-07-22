@@ -56,4 +56,15 @@ body {
 .login-form {
   padding: 0.5em; }
 
+.post-submit-form {
+  text-align: center; }
+  .post-submit-form h2 {
+    margin: 0.5em; }
+  .post-submit-form input {
+    margin: 0.5em; }
+  .post-submit-form textarea {
+    width: 60em;
+    height: 40em;
+    padding: 0.5em; }
+
 /*# sourceMappingURL=style.css.map */
