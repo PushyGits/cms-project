@@ -76,13 +76,17 @@ body {
     height: 2em;
     font-size: 1.2em;
     color: #02b875; }
+  .wrapper-box input:focus, .wrapper-box textarea:focus {
+    box-shadow: 0 0 5px #02b875;
+    border: 1px solid #02b875; }
 
 ::-webkit-input-placeholder {
   font-size: 1.2em; }
 
 .login-form {
   padding: 0.5em;
-  line-height: 1.5em; }
+  line-height: 1.6em;
+  text-align: left; }
 
 .post-submit-form {
   text-align: center; }
