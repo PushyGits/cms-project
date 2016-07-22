@@ -48,7 +48,7 @@ background: rgb(230,230,230);
   letter-spacing: 1em;
 }
 
-//useradmin
+//useradmin-submitting posts
 .post-submit-form {
 
   .blog-Btn {
@@ -64,6 +64,7 @@ background: rgb(230,230,230);
   button {
     width: 14em;
   }
+
   input {
     padding: 0.5em;
     width: 12em;
@@ -140,15 +141,17 @@ background: rgb(230,230,230);
 
 .post-submit-form {
   text-align: center;
-    h2 {
-      margin: 0.5em;
-    }
+    // h2 {
+    //   margin: 0.5em;
+    // }
     input {
       margin: 0.5em;
     }
     textarea {
-      width: 60em;
-      height: 40em;
+      width: 34em;
+      height: 24em;
       padding: 0.5em;
+      font-size: 1.2em;
+      color: grey;
     }
 }
