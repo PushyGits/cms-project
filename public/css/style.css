@@ -113,7 +113,8 @@ body {
   margin: 4% auto auto auto;
   padding: 3em;
   border-radius: 0.5em;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  border: 0.5px solid #d2d2d2; }
   .wrapper-box .requried-field {
     color: red; }
   .wrapper-box .loginbtn {
@@ -153,6 +154,8 @@ body {
     height: 24em;
     padding: 0.5em;
     font-size: 1.2em;
-    color: grey; }
+    color: grey;
+    border-radius: 0.5em;
+    border: 0.5px solid #d2d2d2; }
 
 /*# sourceMappingURL=style.css.map */
